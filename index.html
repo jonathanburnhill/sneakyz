@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/styles.css">
+
+    </head>
+    <body onload="showMyFace()">
+        <video id="yourVideo" autoplay muted></video>
+        <video id="friendsVideo" autoplay></video>
+        <br />
+
+        <button onclick="showFriendsFace()" type="button"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Call</button>
+        
+
+
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAXcDG2_5kIm6BQL_tSZOQ5nHxrwVopKQY",
+    authDomain: "senakyz.firebaseapp.com",
+    databaseURL: "https://senakyz.firebaseio.com",
+    projectId: "senakyz",
+    storageBucket: "senakyz.appspot.com",
+    messagingSenderId: "649366590532"
+  };
+  firebase.initializeApp(config);
+</script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
